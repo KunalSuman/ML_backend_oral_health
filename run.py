@@ -81,7 +81,7 @@ def predict_api():
         "vit_bo": res2
     }
     # you can uncomment to forward:
-    # requests.post("http://192.168.160.126:8194", json=payload)
+    requests.post("http://0.0.0.0:8194/submit_result", json=payload)
 
     print(res1, res2)
     return jsonify({
